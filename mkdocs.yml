@@ -1,0 +1,139 @@
+site_name: 學習筆記
+site_description: Python、ESP32、資料、介面與 App 整合學習筆記
+site_url: https://arielxq.github.io/Index-Zero/
+repo_url: https://github.com/arielxq/Index-Zero
+repo_name: arielxq/Index-Zero
+theme:
+  name: material
+  language: zh-TW
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切換深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: 切換淺色模式
+  font:
+    text: Noto Sans TC
+    code: JetBrains Mono
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
+  - pymdownx.keys
+  - pymdownx.emoji
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+plugins:
+  - search
+nav:
+  - 首頁: index.md
+  - 主線課程:
+      - 01｜用 uv 建立 Python 虛擬環境: main/01-uv.md
+      - 02｜課程準備：認識 AIoT 資料流: main/02-data-flow.md
+      - 03｜UART：Python 與 ESP32 雙向通訊: main/03-uart.md
+      - 04｜CSV 與趨勢圖: main/04-csv-chart.md
+      - 05｜I2C：LCD1602A 與 DHT11: main/05-i2c-lcd.md
+      - 06｜74HC595 與裸 8×8 點陣: main/06-matrix.md
+      - 07｜Gradio AIoT 儀表板: main/07-gradio.md
+      - 08｜整合專題：環境看板: main/08-dashboard.md
+  - 主線延伸選讀:
+      - 序列通訊與整合:
+          - UART JSON、緩衝區與請求／回應: extensions/uart-json.md
+          - UART 程式導讀: extensions/uart-guide.md
+          - 環境看板整合程式導讀: extensions/dashboard-guide.md
+          - 整合專題故障分流: extensions/troubleshooting.md
+      - 資料、顯示與介面:
+          - CSV 與圖表程式導讀: extensions/csv-guide.md
+          - 感測資料品質: extensions/data-quality.md
+          - LCD 顯示程式導讀: extensions/lcd-guide.md
+          - 74HC595 與點陣掃描導讀: extensions/matrix-guide.md
+          - Gradio 事件、狀態與原型邊界: extensions/gradio-boundaries.md
+  - 通用延伸選讀:
+      - Python 程式設計:
+          - pathlib 與檔案路徑: general/python-pathlib.md
+          - json 與 csv: general/python-json-csv.md
+          - datetime 與 time: general/python-time.md
+          - 函式、類別與責任分工: general/python-design.md
+          - 例外處理與錯誤訊息: general/python-errors.md
+          - logging 與除錯紀錄: general/python-logging.md
+          - 進階 logger 技巧與設計方法: general/python-logger-design.md
+          - 測試概念與 pytest 實作: general/python-testing.md
+      - pyserial 與序列埠:
+          - 連線、讀寫與逾時: general/serial-basics.md
+          - 埠與資料除錯: general/serial-debug.md
+          - 連線生命週期與 COM 埠除錯: general/serial-lifecycle.md
+      - 資料處理與圖表:
+          - Pandas 基礎操作: general/pandas-basics.md
+          - Pandas 清理、篩選與彙整: general/pandas-cleaning.md
+          - Matplotlib 圖表基本元件: general/matplotlib-basics.md
+          - Matplotlib 可讀性與輸出: general/matplotlib-output.md
+      - Gradio:
+          - 介面、元件與版面: general/gradio-components.md
+          - 事件、資料流與元件更新: general/gradio-events.md
+          - 狀態、驗證與使用體驗: general/gradio-state.md
+      - 網路與安全:
+          - IPv4、IPv6 與連線路徑: general/network-path.md
+          - 公私鑰、數位簽章與中間人防範: general/security.md
+      - 網站後端概念:
+          - 高併發、分散式系統與資料同步: general/backend.md
+  - 選做專題：進階實務模擬:
+      - 專題總覽: advanced/index.md
+      - 前導技術概要: advanced/overview.md
+      - MQTT 基礎：發布、訂閱與 Broker: advanced/mqtt-basics.md
+      - PubSubClient 函式庫: advanced/pubsubclient.md
+      - HiveMQ Cloud 基本設定: advanced/hivemq.md
+      - 兩個 Topic 的控制與回傳: advanced/mqtt-topics.md
+      - SPI 通訊與多裝置: advanced/spi.md
+      - RC522 與 MFRC522: advanced/rc522.md
+      - DumpInfo 與練習卡: advanced/rc522-dumpinfo.md
+      - FastAPI Gateway API: advanced/fastapi.md
+      - FastAPI Hello World: advanced/fastapi-hello.md
+      - ngrok 暫時公開通道: advanced/ngrok.md
+      - ngrok 設定本機 port: advanced/ngrok-port.md
+      - Thunkable 與 Web API: advanced/thunkable.md
+      - Blynk App 與 Gateway 取捨: advanced/blynk.md
+      - Thunkable 政府開放資料清單: advanced/thunkable-open-data.md
+      - BLE 近距離設定: advanced/ble.md
+      - LightBlue 與 ESP32 資料交換: advanced/lightblue.md
+  - 其他選做實作:
+      - MAX7219 點陣模組: optional/max7219.md
+  - 資訊補充:
+      - 常見 GUI 與 App 解決方案: supplemental/gui-apps.md
+      - 系統耦合性: supplemental/coupling.md
+      - 新增筆記模板: supplemental/template.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/arielxq/Index-Zero
+copyright: Copyright © 2026 Ariel
