@@ -7,6 +7,8 @@ theme:
   name: material
   language: zh-TW
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top
@@ -59,6 +61,7 @@ plugins:
 nav:
   - 首頁: index.md
   - 主線課程:
+      - 主線課程總覽: main/index.md
       - 01｜用 uv 建立 Python 虛擬環境: main/01-uv.md
       - 02｜課程準備：認識 AIoT 資料流: main/02-data-flow.md
       - 03｜UART：Python 與 ESP32 雙向通訊: main/03-uart.md
@@ -67,7 +70,8 @@ nav:
       - 06｜74HC595 與裸 8×8 點陣: main/06-matrix.md
       - 07｜Gradio AIoT 儀表板: main/07-gradio.md
       - 08｜整合專題：環境看板: main/08-dashboard.md
-  - 主線延伸選讀:
+  - 主線延伸:
+      - 主線延伸總覽: extensions/index.md
       - 序列通訊與整合:
           - UART JSON、緩衝區與請求／回應: extensions/uart-json.md
           - UART 程式導讀: extensions/uart-guide.md
@@ -79,7 +83,8 @@ nav:
           - LCD 顯示程式導讀: extensions/lcd-guide.md
           - 74HC595 與點陣掃描導讀: extensions/matrix-guide.md
           - Gradio 事件、狀態與原型邊界: extensions/gradio-boundaries.md
-  - 通用延伸選讀:
+  - 通用延伸:
+      - 通用延伸總覽: general/index.md
       - Python 程式設計:
           - pathlib 與檔案路徑: general/python-pathlib.md
           - json 與 csv: general/python-json-csv.md
@@ -107,7 +112,7 @@ nav:
           - 公私鑰、數位簽章與中間人防範: general/security.md
       - 網站後端概念:
           - 高併發、分散式系統與資料同步: general/backend.md
-  - 選做專題：進階實務模擬:
+  - 進階實務:
       - 專題總覽: advanced/index.md
       - 前導技術概要: advanced/overview.md
       - MQTT 基礎：發布、訂閱與 Broker: advanced/mqtt-basics.md
@@ -126,9 +131,11 @@ nav:
       - Thunkable 政府開放資料清單: advanced/thunkable-open-data.md
       - BLE 近距離設定: advanced/ble.md
       - LightBlue 與 ESP32 資料交換: advanced/lightblue.md
-  - 其他選做實作:
+  - 其他選做:
+      - 其他選做總覽: optional/index.md
       - MAX7219 點陣模組: optional/max7219.md
   - 資訊補充:
+      - 資訊補充總覽: supplemental/index.md
       - 常見 GUI 與 App 解決方案: supplemental/gui-apps.md
       - 系統耦合性: supplemental/coupling.md
       - 新增筆記模板: supplemental/template.md
