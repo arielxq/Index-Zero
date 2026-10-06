@@ -1,0 +1,42 @@
+:root {
+  --md-primary-fg-color: #0f766e;
+  --md-accent-fg-color: #ea580c;
+}
+
+.md-typeset h1 { font-weight: 750; letter-spacing: 0; }
+.md-typeset h2 { border-left: 4px solid var(--md-accent-fg-color); padding-left: .7rem; }
+.md-typeset .flow-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  background: var(--md-code-bg-color);
+}
+.md-typeset .timeline { border-left: 3px solid var(--md-accent-fg-color); padding-left: 1.2rem; }
+.md-typeset .timeline li { padding: .4rem 0; }
+
+/* Make nested topic groups easy to scan in the primary sidebar. */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  margin-top: .55rem;
+  padding-bottom: .35rem;
+}
+
+.md-nav--primary .md-nav__item--section > .md-nav {
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  margin-left: .65rem;
+  padding-left: .65rem;
+}
+
+.md-nav--primary .md-nav__item--section > .md-nav .md-nav__link {
+  padding-left: .35rem;
+}
+
+.md-nav--primary .md-nav__item--section > .md-nav .md-nav__item--active > .md-nav__link {
+  border-left: 3px solid var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+  margin-left: -.65rem;
+  padding-left: .65rem;
+}
